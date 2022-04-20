@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox minHeight="356.0" minWidth="604.0" prefHeight="356.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.femass.biblioteca.gui.EmprestimoController">
+    <children>
+        <Pane minHeight="356.0" minWidth="225.0" prefHeight="356.0" prefWidth="225.0">
+            <children>
+                <ListView fx:id="bibliotecaListView" layoutX="7.0" layoutY="22.0" onKeyPressed="#bibliotecaListView_KeyPressed" onMouseClicked="#bibliotecaListView_MouseClicked" prefHeight="270.0" prefWidth="200.0" />
+          <Button layoutX="34.0" layoutY="309.0" mnemonicParsing="false" text="Voltar" />
+            </children>
+        </Pane>
+        <Pane minHeight="356.0" minWidth="339.0" prefHeight="356.0" prefWidth="384.0">
+            <children>
+                <TextField fx:id="TxtCodigo" disable="true" layoutX="125.0" layoutY="23.0" prefHeight="27.0" prefWidth="72.0" />
+                <TextField fx:id="TxtNome" disable="true" layoutX="125.0" layoutY="69.0" prefHeight="27.0" prefWidth="210.0" />
+                <Label layoutX="9.0" layoutY="27.0" text="Código" />
+                <Label layoutX="12.0" layoutY="73.0" text="Usuário" />
+                <Label layoutX="14.0" layoutY="117.0" text="Tipo de Usuário" />
+                <Label layoutX="16.0" layoutY="153.0" text="Qtd Emprestada" />
+                <TextField fx:id="TxtQtdEmprestimo" disable="true" layoutX="125.0" layoutY="150.0" prefHeight="27.0" prefWidth="210.0" />
+                <Button fx:id="BtnGravar" disable="true" layoutX="270.0" layoutY="265.0" mnemonicParsing="false" onAction="#BtnEmprestar_action" text="Emprestar" />
+                <Button fx:id="BtnCancelar" disable="true" layoutX="269.0" layoutY="296.0" mnemonicParsing="false" onAction="#BtnCancelar_Action" prefHeight="27.0" prefWidth="72.0" text="Cancelar" />
+                <ComboBox  fx:id="tipoUsuario" layoutX="125.0" layoutY="115.0" prefHeight="25.0" prefWidth="210.0" />
+            </children>
+        </Pane>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+    </children>
+</HBox>
